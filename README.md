@@ -1,4 +1,4 @@
-Welcome to my GitHub Projects Repository!
+Welcome to my GitHub 'Projects' Repository!
 
 Here you will find some of the latest projects
 that I have worked on.
