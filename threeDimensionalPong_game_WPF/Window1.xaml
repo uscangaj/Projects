@@ -1,0 +1,13 @@
+﻿<Window x:Class="uscanga_CS480_HW08.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Three-Dimensional Sphere"
+    Height="600"
+    Width="1000"
+    Loaded="Window_Loaded"
+    KeyDown="Window_KeyDown">
+    <Grid>
+        <Viewport3D Grid.Row="0" Grid.Column="0" Name="MainViewport" />
+        <Label Name="label_text" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+    </Grid>
+</Window>

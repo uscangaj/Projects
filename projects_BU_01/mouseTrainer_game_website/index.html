@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		
+		<style>
+			
+		</style>
+		
+		
+		
+		<script>
+			var NyanAudio;
+			var NoinkAudio;
+			var AyayaAudio;
+			var Speed = 0;
+			var Hits = 0;
+			var Streak = 10;
+			var GameOn = 0;
+			var isRunning = 0;
+			var box;
+			var rec;
+			var offTop = 0;
+			var offBot = 0;
+			var offLeft = 0;
+			var offRight = 0;
+			var hDim = 0;
+			var wDim = 0;
+			var gameRun;
+			var speedUp = 0;
+			
+			
+			
+			function fnStart()
+			{
+				var speed = document.getElementById("speed").value;
+				
+				
+				
+				NyanAudio = document.getElementById("nyanSound");
+				NyanAudio.volume = 0.25;
+				NyanAudio.playbackRate = 0.8;
+				NyanAudio.loop = true;
+				
+				NoinkAudio = document.getElementById("noinkSound");
+				NoinkAudio.volume = 0.5;
+				NoinkAudio.loop = false;
+				
+				AyayaAudio = document.getElementById("ayayaSound");
+				AyayaAudio.volume = 1.0;
+				AyayaAudio.loop = false;
+				
+				
+				if (speed<100 || speed>10000)
+				{
+					alert("Error: Speed must be between 100ms and 10,000ms");
+					document.getElementById("speed").value = 999;
+				}
+				else
+				{
+					if (isRunning != 1)
+					{
+						GameOn = 1;
+						isRunning = 1;
+						Speed = speed;
+						gameRun = setInterval(randomizePos, Speed);
+						
+						NyanAudio.play();
+					}
+				}
+			}
+			
+			
+			
+			function fnStop()
+			{
+				GameOn = 0;
+				isRunning = 0;
+				clearInterval(gameRun);
+				
+				NyanAudio.pause();
+			}
+			
+			
+			
+			function fnClear()
+			{
+				document.getElementById("hits").value = 0;
+			}
+			
+			
+			
+			function randomizePos()
+			{
+				var xRange;
+				var yRange;
+				var newX;
+				var newY;
+				
+				
+				
+				box = document.getElementById("playArea");
+				rec = box.getBoundingClientRect();
+				offTop = rec.top;
+				offBot = rec.bottom;
+				offLeft = rec.left;
+				offRight = rec.right;
+				wDim = rec.width;
+				hDim = rec.height;
+				
+				
+				//Randomize position
+				xRange = offLeft + (wDim - 100);
+				yRange = offTop + (hDim - 75);
+				newX = Math.floor(Math.random() * xRange);
+				newY = Math.floor(Math.random() * yRange);
+				
+				if (newX < offLeft)
+					newX = offLeft;
+				else if (newX > offRight)
+					newX = offRight-105;
+					
+				if (newY < offTop)
+					newY = offTop;
+				else if (newY > offBot)
+					newY = offBot-80;
+				
+				
+				if (GameOn == 1)
+				{	
+					document.getElementById("hitBox").style.left = newX + "px";
+					document.getElementById("hitBox").style.top = newY + "px";
+					
+					document.getElementById("posX").value = newX;
+					document.getElementById("posY").value = newY;
+				}
+				document.getElementById("speed").value = Speed;
+			}
+			
+			
+			
+			function updateHits()
+			{
+				var tmp;
+				
+				
+				
+				Hits++;
+				document.getElementById("hits").value = Hits;
+				NoinkAudio.play();
+				
+				
+				Streak--;
+				if (Streak <= 0)
+				{
+						AyayaAudio.play();
+						Streak = 10
+						;
+						NyanAudio.playbackRate += 0.1;
+						//document.getElementById("quote").value = NyanAudio.playbackRate;
+						
+						Speed = parseInt(Speed, 10);
+						Speed -= 100;
+						document.getElementById("speed").value = Speed;
+						
+						clearInterval(gameRun);
+						gameRun = setInterval(randomizePos, Speed);
+				}
+				
+				
+				randomizePos();
+			}
+			
+			
+			
+			function isValid(ev)
+			{
+				var ch = String.fromCharCode(ev.which);
+				
+				
+				
+				if (!(/[0-9]/.test(ch)))
+				{
+					ev.preventDefault();
+				}
+			}
+		</script>
+	</head>
+	
+	
+	
+	<body>
+		<title>Catch That Cat!</title>
+		<div id="header">
+			<h1>CS 326 Project 05 - Catch That Cat!</h1>
+			<h2>Juan Uscanga</h2>
+		</div>
+		
+		
+		<div>
+			<div id="catBox">
+				<div id="playArea">
+					<h3 id="quote">"Catch me if you can!!!" - Nyan Cat probably</h3>
+					
+					<div id="hitBox">
+						<audio id="noinkSound" src="noink.mp3"></audio>
+						<a><img
+							border="0"
+							alt="W3Schools"
+							src="nyan3.gif"
+							width="100" height="75"
+							id="nyan"
+							onclick="updateHits();"
+						></a>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div id="container1">
+				<div id="tLeft">
+					<audio id="nyanSound" src="nyan.mp3"></audio>
+					<button
+						onclick="fnStart();"
+						type="button"
+						id="btnStart"
+					>
+					Start
+					</button>
+				</div>
+				
+				
+				<div id="tMid">
+					<button
+						onclick="fnClear();"
+						type="button"
+						id="btnClear"
+					>
+					Clear Score
+					</button>
+				</div>
+				
+				
+				<div id="tRight">
+					<button
+						onclick="fnStop();"
+						type="button"
+						id="btnStop"
+					>
+					Stop
+					</button>
+				</div>
+			</div>
+			
+			
+			
+			<div id="container2">
+				<div id="bLeft">
+					<audio id="ayayaSound" src="ayaya.mp3"></audio>
+					<label>Hits:</label>
+						<input type="text" id="hits" value="0" readonly/>
+				</div>
+				
+				
+				<div id="bMid">
+					<label>Speed:</label>
+						<input type="text" id="speed" value="999" onkeypress="isValid(event);" onfocus="this.value=''"/>
+					<br>
+					<label>(m sec. between jumps)</label>
+				</div>
+				
+				
+				<div id="bRight">
+					<label id="cp">Current Position</label>
+					</br>
+					<label id="pX">X:</label>
+						<input type="text" id="posX" value=""/>
+					<label id="pY">Y:</label>
+						<input type="text" id="posY" value=""/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+

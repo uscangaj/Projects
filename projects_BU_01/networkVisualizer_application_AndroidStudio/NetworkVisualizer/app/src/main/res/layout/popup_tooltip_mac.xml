@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background_device_info"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    tools:context=".Popup_tooltip_mac">
+
+
+    <TextView
+        android:id="@+id/text_whatis_mac_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorAllWhite"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/string_whatis_mac_title"
+        android:background="@android:color/transparent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorBackground">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_whatis_mac_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/string_whatis_mac_body"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:id="@+id/text_howtotell_mac_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:background="@drawable/background_device_info"
+                android:text="@string/string_howtotell_mac_title"
+                android:textColor="@color/colorAllWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_whatis_mac_body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/string_howtotell_mac_body"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:id="@+id/text_mac_example"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="@string/string_mac_example"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text_mac_body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/string_breakline1"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/text_howdoeswork_mac_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:background="@drawable/background_device_info"
+                android:text="@string/string_howdoeswork_mac_title"
+                android:textColor="@color/colorAllWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_howdoeswork_mac_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/string_howdoeswork_mac_body"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:justificationMode="inter_word"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

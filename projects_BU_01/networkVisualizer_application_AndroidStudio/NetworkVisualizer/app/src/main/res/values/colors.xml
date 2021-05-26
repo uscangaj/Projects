@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#145494</color>
+    <color name="colorPrimary">#296EB2</color>
+    <color name="colorAccentDark">#ff7d52</color>
+    <color name="colorAccent">#F09C3B</color>
+    <color name="colorBackground">#f5eacb</color>
+    <color name="colorBackgroundLight">#FFFBED</color>
+    <color name="colorWhite">#EFDFFE</color>
+    <color name="colorNeutralLight">#1769BC</color>
+    <color name="colorNeutralDark">#515B6C</color>
+    <color name="colorTextDark">#444444</color>
+    <color name="colorTextBright">#FFFFFF</color>
+    <color name="colorAllWhite">#FFFFFF</color>
+    <color name="colorAllBlack">#000000</color>
+    <color name="colorGreen">#116641</color>
+    <color name="colorPurple">#371D8D</color>
+    <color name="colorBlue">#3482D0</color>
+    <color name="colorPink">#A11552</color>
+    <color name="colorOrange">#F09C3B</color>
+    <color name="colorRed">#B51212</color>
+    <color name="colorAqua">#219F97</color>
+
+    <color name="wifiGreen">#33BA33</color>
+    <color name="wifiYellow">#FFAA11</color>
+    <color name="wifiRed">#FF3333</color>
+</resources>

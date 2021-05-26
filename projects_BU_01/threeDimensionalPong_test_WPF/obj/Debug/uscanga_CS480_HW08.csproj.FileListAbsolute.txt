@@ -1,0 +1,52 @@
+C:\Users\uscan\Desktop\uscanga_CS480_HW08\bin\Debug\howto_3D_smooth_sphere.exe
+C:\Users\uscan\Desktop\uscanga_CS480_HW08\bin\Debug\howto_3D_smooth_sphere.pdb
+C:\Users\uscan\Desktop\uscanga_CS480_HW08\obj\Debug\uscanga_CS480_HW08.csprojAssemblyReference.cache
+C:\Users\uscan\Desktop\uscanga_CS480_HW08\obj\Debug\Window1.baml
+C:\Users\uscan\Desktop\uscanga_CS480_HW08\obj\Debug\Window1.g.cs
+C:\Users\uscan\Desktop\uscanga_CS480_HW08\obj\Debug\App.g.cs
+C:\Users\uscan\Desktop\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere_MarkupCompile.cache
+C:\Users\uscan\Desktop\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.g.resources
+C:\Users\uscan\Desktop\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.Properties.Resources.resources
+C:\Users\uscan\Desktop\uscanga_CS480_HW08\obj\Debug\uscanga_CS480_HW08.csproj.GenerateResource.cache
+C:\Users\uscan\Desktop\uscanga_CS480_HW08\obj\Debug\uscanga_CS480_HW08.csproj.CoreCompileInputs.cache
+C:\Users\uscan\Desktop\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.exe
+C:\Users\uscan\Desktop\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.pdb
+C:\Users\uscan\Desktop\School\2. CS 480\2. Projects\uscanga_CS480_HW08\bin\Debug\howto_3D_smooth_sphere.exe
+C:\Users\uscan\Desktop\School\2. CS 480\2. Projects\uscanga_CS480_HW08\bin\Debug\howto_3D_smooth_sphere.pdb
+C:\Users\uscan\Desktop\School\2. CS 480\2. Projects\uscanga_CS480_HW08\obj\Debug\uscanga_CS480_HW08.csprojAssemblyReference.cache
+C:\Users\uscan\Desktop\School\2. CS 480\2. Projects\uscanga_CS480_HW08\obj\Debug\Window1.baml
+C:\Users\uscan\Desktop\School\2. CS 480\2. Projects\uscanga_CS480_HW08\obj\Debug\Window1.g.cs
+C:\Users\uscan\Desktop\School\2. CS 480\2. Projects\uscanga_CS480_HW08\obj\Debug\App.g.cs
+C:\Users\uscan\Desktop\School\2. CS 480\2. Projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere_MarkupCompile.cache
+C:\Users\uscan\Desktop\School\2. CS 480\2. Projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.g.resources
+C:\Users\uscan\Desktop\School\2. CS 480\2. Projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.Properties.Resources.resources
+C:\Users\uscan\Desktop\School\2. CS 480\2. Projects\uscanga_CS480_HW08\obj\Debug\uscanga_CS480_HW08.csproj.GenerateResource.cache
+C:\Users\uscan\Desktop\School\2. CS 480\2. Projects\uscanga_CS480_HW08\obj\Debug\uscanga_CS480_HW08.csproj.CoreCompileInputs.cache
+C:\Users\uscan\Desktop\School\2. CS 480\2. Projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.exe
+C:\Users\uscan\Desktop\School\2. CS 480\2. Projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.pdb
+E:\1. School\2. CS 480\Projects\uscanga_CS480_HW08\bin\Debug\howto_3D_smooth_sphere.exe
+E:\1. School\2. CS 480\Projects\uscanga_CS480_HW08\bin\Debug\howto_3D_smooth_sphere.pdb
+E:\1. School\2. CS 480\Projects\uscanga_CS480_HW08\obj\Debug\uscanga_CS480_HW08.csprojAssemblyReference.cache
+E:\1. School\2. CS 480\Projects\uscanga_CS480_HW08\obj\Debug\Window1.baml
+E:\1. School\2. CS 480\Projects\uscanga_CS480_HW08\obj\Debug\Window1.g.cs
+E:\1. School\2. CS 480\Projects\uscanga_CS480_HW08\obj\Debug\App.g.cs
+E:\1. School\2. CS 480\Projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere_MarkupCompile.cache
+E:\1. School\2. CS 480\Projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.g.resources
+E:\1. School\2. CS 480\Projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.Properties.Resources.resources
+E:\1. School\2. CS 480\Projects\uscanga_CS480_HW08\obj\Debug\uscanga_CS480_HW08.csproj.GenerateResource.cache
+E:\1. School\2. CS 480\Projects\uscanga_CS480_HW08\obj\Debug\uscanga_CS480_HW08.csproj.CoreCompileInputs.cache
+E:\1. School\2. CS 480\Projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.exe
+E:\1. School\2. CS 480\Projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.pdb
+E:\4. GitHub\Projects\1_projects\uscanga_CS480_HW08\bin\Debug\howto_3D_smooth_sphere.exe
+E:\4. GitHub\Projects\1_projects\uscanga_CS480_HW08\bin\Debug\howto_3D_smooth_sphere.pdb
+E:\4. GitHub\Projects\1_projects\uscanga_CS480_HW08\obj\Debug\uscanga_CS480_HW08.csprojAssemblyReference.cache
+E:\4. GitHub\Projects\1_projects\uscanga_CS480_HW08\obj\Debug\Window1.baml
+E:\4. GitHub\Projects\1_projects\uscanga_CS480_HW08\obj\Debug\Window1.g.cs
+E:\4. GitHub\Projects\1_projects\uscanga_CS480_HW08\obj\Debug\App.g.cs
+E:\4. GitHub\Projects\1_projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere_MarkupCompile.cache
+E:\4. GitHub\Projects\1_projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.g.resources
+E:\4. GitHub\Projects\1_projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.Properties.Resources.resources
+E:\4. GitHub\Projects\1_projects\uscanga_CS480_HW08\obj\Debug\uscanga_CS480_HW08.csproj.GenerateResource.cache
+E:\4. GitHub\Projects\1_projects\uscanga_CS480_HW08\obj\Debug\uscanga_CS480_HW08.csproj.CoreCompileInputs.cache
+E:\4. GitHub\Projects\1_projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.exe
+E:\4. GitHub\Projects\1_projects\uscanga_CS480_HW08\obj\Debug\howto_3D_smooth_sphere.pdb

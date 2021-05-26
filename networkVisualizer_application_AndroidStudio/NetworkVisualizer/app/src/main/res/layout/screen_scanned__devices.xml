@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Scanned_Devices"
+    android:background="@drawable/background_scanned_devices">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar_reScan"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:progressDrawable="@drawable/round_pb_mini"
+        app:layout_constraintBottom_toBottomOf="@+id/rescan_button"
+        app:layout_constraintEnd_toEndOf="@+id/rescan_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rescan_button"
+        app:layout_constraintTop_toTopOf="@+id/rescan_button" />
+
+    <Button
+        android:id="@+id/rescan_button"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/round_bg"
+        android:onClick="ButtonRescan_OnClick"
+        android:padding="15dp"
+        android:shadowColor="@android:color/black"
+        android:textColor="@color/colorTextBright"
+        android:text="@string/button_scan"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <ImageView
+        android:id="@+id/conctRouter"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="@color/colorBlue"
+        android:contentDescription="@connected router"
+        android:onClick="Button_ConnectedTo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wifi_80" />
+
+    <ImageButton
+        android:id="@+id/cmsvButton"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/colorBlue"
+        android:contentDescription="@computer server"
+        android:onClick="Button_PCsServers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/laptop_80" />
+
+    <ImageButton
+        android:id="@+id/tabphButton"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="175dp"
+        android:background="@color/colorBlue"
+        android:contentDescription="@colorPurple phone"
+        android:onClick="Button_PhonesTablets"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/phone_80" />
+
+    <ImageButton
+        android:id="@+id/camsenButton"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="175dp"
+        android:background="@color/colorBlue"
+        android:contentDescription="@cameras sensors"
+        android:onClick="Button_CamsSensors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/camera_80" />
+
+    <ImageButton
+        android:id="@+id/routersButton"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="175dp"
+        android:background="@color/colorBlue"
+        android:contentDescription="@additonal routers"
+        android:onClick="Button_Routers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/router_80" />
+
+    <ImageButton
+        android:id="@+id/miscButton"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="@color/colorBlue"
+        android:contentDescription="@miscellaneous unknown"
+        android:onClick="Button_Miscellaneous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/routersButton"
+        app:layout_constraintStart_toEndOf="@+id/camsenButton"
+        app:layout_constraintTop_toBottomOf="@+id/conctRouter"
+        app:srcCompat="@drawable/misc_80" />
+
+    <ImageButton
+        android:id="@+id/additButton"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorBlue"
+        android:contentDescription="@user addtional"
+        android:onClick="Button_Favorites"
+        app:layout_constraintBottom_toTopOf="@+id/conctRouter"
+        app:layout_constraintEnd_toStartOf="@+id/cmsvButton"
+        app:layout_constraintStart_toEndOf="@+id/tabphButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482"
+        app:srcCompat="@drawable/fav_80" />
+
+    <TextView
+        android:id="@+id/tabphText"
+        android:layout_width="95dp"
+        android:layout_height="20dp"
+        android:text="@string/phones_tablets"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextDark"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tabphButton"
+        app:layout_constraintEnd_toEndOf="@+id/tabphButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tabphButton" />
+
+    <TextView
+        android:id="@+id/useraddtText"
+        android:layout_width="95dp"
+        android:layout_height="20dp"
+        android:text="@string/favorites"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/additButton"
+        app:layout_constraintEnd_toEndOf="@+id/additButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/additButton" />
+
+    <TextView
+        android:id="@+id/cmsvText"
+        android:layout_width="95dp"
+        android:layout_height="20dp"
+        android:text="@string/pcs_servers"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/cmsvButton"
+        app:layout_constraintEnd_toEndOf="@+id/cmsvButton"
+        app:layout_constraintStart_toStartOf="@+id/cmsvButton" />
+
+    <TextView
+        android:id="@+id/camsenText"
+        android:layout_width="95dp"
+        android:layout_height="20dp"
+        android:text="@string/cams_sensors"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/camsenButton"
+        app:layout_constraintStart_toStartOf="@+id/camsenButton"
+        app:layout_constraintTop_toBottomOf="@+id/camsenButton" />
+
+    <TextView
+        android:id="@+id/miscText"
+        android:layout_width="95dp"
+        android:layout_height="20dp"
+        android:text="@string/miscellaneous"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/miscButton"
+        app:layout_constraintStart_toStartOf="@+id/miscButton"
+        app:layout_constraintTop_toBottomOf="@+id/miscButton" />
+
+    <TextView
+        android:id="@+id/routersText"
+        android:layout_width="95dp"
+        android:layout_height="20dp"
+        android:text="@string/routers"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/routersButton"
+        app:layout_constraintStart_toStartOf="@+id/routersButton"
+        app:layout_constraintTop_toBottomOf="@+id/routersButton" />
+
+    <TextView
+        android:id="@+id/connectednetworkText"
+        android:layout_width="95dp"
+        android:layout_height="20dp"
+        android:text="@string/connectedto"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/conctRouter"
+        app:layout_constraintEnd_toEndOf="@+id/conctRouter"
+        app:layout_constraintStart_toStartOf="@+id/conctRouter" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/navigation_drawer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
